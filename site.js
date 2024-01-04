@@ -22,3 +22,6 @@
     });
   });
   
+  $('.carousel').carousel({
+    interval: 2000 // El tiempo en milisegundos que cada imagen se mostrará. Cambia este valor según tus necesidades.
+  })
