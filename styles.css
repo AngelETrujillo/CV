@@ -21,6 +21,10 @@ body {
     color: #f1faee;
 }
 
+#Cabecera {
+  height: 50vh;
+}
+
 a {
     color: #ffffff;
 }
@@ -144,14 +148,17 @@ footer {
   .image-container img {
     width: 100%; /* O el ancho que desees */
     height: auto; /* Para mantener la proporción */
+    display: block; 
   }
   
   .text-overlay {
     position: absolute;
     top: 50%;  /* Centrado vertical */
-    left: 35%; /* Centrado horizontal */
+    left: 50%; /* Centrado horizontal */
     transform: translate(-50%, -50%); /* Ajuste para centrar exactamente el texto */
     color: white; /* Color del texto */
+    padding: 15px; /* Añade algo de padding */
+    text-align: center;
     font-size: 24px; /* Tamaño del texto */
     /* Otros estilos para el texto como `font-family`, `text-shadow`, etc. */
   }
@@ -163,6 +170,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #121212; /* Tu color de fondo */
+    text-align: center;
   }
   
   .skill {
@@ -225,3 +233,96 @@ footer {
     font-weight: bold;
   }
   
+
+/*MEDIAS QUERY's*/
+@media (max-width: 768px) {
+
+  .text-overlay {
+    font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
+    padding: 30px;
+    width: 100vw;
+  }
+
+  .skill {
+    width: 100px; /* Reducir tamaño en dispositivos pequeños */
+  }
+
+  .some-element {
+    display: none;
+  }
+
+  #Cabecera h1 {
+    font-family: 'Alfa Slab One', serif;
+    color: #75C2F6;
+    padding-top: 261px;
+  }
+
+  h1 {
+    font-family: 'Alfa Slab One', serif;
+    color: #75C2F6;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .image-container img {
+    display: none;
+  }
+
+  #Cabecera {
+    height: 300px;
+  }
+
+  #contacto{
+    padding: 10px;
+    text-align: center;
+  }
+
+  #skills {
+    padding: 10px
+  }
+
+  .circle {
+    width: 100px; /* Tamaño más pequeño para móviles */
+    height: 100px;
+  }
+
+  .mask,
+  .fill {
+    width: 100px; /* Tamaño más pequeño para móviles */
+    height: 100px;
+  }
+
+  .inside-circle {
+    width: 80px; /* Círculo interno más pequeño para mantener la proporción */
+    height: 80px;
+    line-height: 80px; /* Ajustar para mantener el texto centrado verticalmente */
+    top: 10px;
+    left: 10px;
+  }
+
+  .percentage {
+    font-size: 16px; /* Texto más pequeño para móviles */
+  }
+  
+  #Escolaridad, #Cursos, #Experiencia-Container {
+    padding: 10px;
+  }
+
+  .Experiencia {
+    padding-left: 10px;
+  }
+
+
+}
+
